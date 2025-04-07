@@ -1,45 +1,76 @@
 ---
 id: berlin-lor-monitoring-social-urban-development-source-aligned
-name: Berlin LOR Monitoring Social Urban Development (source-aligned)
 metadata:
-  ownership: Open Data Product
-  domain: statistics
+  name: Berlin LOR Monitoring Social Urban Development (source-aligned)
+  owner: Open Data product
+  description: Source-aligned data product providing Berlin LOR monitoring social urban development data
+  url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned
+  license: CC-BY 4.0
+  updated: 2025-06-02
   schema:
-    - inhabitants: number of inhabitants
-    - s1_percentage_unemployed: (status index) percentage of unemployed inhabitants
-    - s2_percentage_long_term_unemployed: (status index) percentage of long-term unemployed inhabitants
-    - s3_percentage_transfer_payments_recipients: (status index) percentage of inhabitants receiving transfer payments
-    - s4_percentage_transfer_payments_recipients_below_15_years: (status index) percentage of inhabitants receiving transfer payments below 15 years old
-    - d1_percentage_unemployed: (dynamic index) percentage of unemployed inhabitants
-    - d2_percentage_long_term_unemployed: (dynamic index) percentage of long-term unemployed inhabitants
-    - d3_percentage_transfer_payments_recipients: (dynamic index) percentage of inhabitants receiving transfer payments
-    - d4_percentage_transfer_payments_recipients_below_15_years: (dynamic index) percentage of inhabitants receiving transfer payments below 15 years old
-    - k01_youth_unemployment: percentage of youth unemployment
-    - k02_single_parent_households: percentage of single parent households
-    - k03_old_age_poverty: percentage of old age poverty
-    - k04_children_with_migration_background: percentage of children with migration background
-    - k05_inhabitants_with_migration_background: percentage of inhabitants with migration background
-    - k16_foreigners: percentage of foreigners
-    - k06_change_proportion_of_foreigner: change of proportion of foreigner
-    - k17_non_eu_foreigners: percentage of non-EU foreigners
-    - k07_foreign_transfer_recipients: percentage of foreign transfer recipients
-    - k08_urban_apartments: percentage of urban apartments
-    - k14_living_rooms: average number of living rooms
-    - k15_living_space: average living space
-    - k09_simple_residential_area: percentage of simple residential area
-    - k10_duration_of_residence_over_5_years: percentage of duration of residence over 5 years old
-    - k11_migration_volume: migration volume
-    - k12_balance_of_migration: balance of migration
-    - k13_balance_of_migration_of_children_below_6: balance of migration of children below 6 years old
+    - name: inhabitants
+      description: number of inhabitants
+    - name: s1_percentage_unemployed
+      description: (status index) percentage of unemployed inhabitants
+    - name: s2_percentage_long_term_unemployed
+      description: (status index) percentage of long-term unemployed inhabitants
+    - name: s3_percentage_transfer_payments_recipients
+      description: (status index) percentage of inhabitants receiving transfer payments
+    - name: s4_percentage_transfer_payments_recipients_below_15_years
+      description: (status index) percentage of inhabitants receiving transfer payments below 15 years old
+    - name: d1_percentage_unemployed
+      description: (dynamic index) percentage of unemployed inhabitants
+    - name: d2_percentage_long_term_unemployed
+      description: (dynamic index) percentage of long-term unemployed inhabitants
+    - name: d3_percentage_transfer_payments_recipients
+      description: (dynamic index) percentage of inhabitants receiving transfer payments
+    - name: d4_percentage_transfer_payments_recipients_below_15_years
+      description: (dynamic index) percentage of inhabitants receiving transfer payments below 15 years old
+    - name: k01_youth_unemployment
+      description: percentage of youth unemployment
+    - name: k02_single_parent_households
+      description: percentage of single parent households
+    - name: k03_old_age_poverty
+      description: percentage of old age poverty
+    - name: k04_children_with_migration_background
+      description: percentage of children with migration background
+    - name: k05_inhabitants_with_migration_background
+      description: percentage of inhabitants with migration background
+    - name: k16_foreigners
+      description: percentage of foreigners
+    - name: k06_change_proportion_of_foreigner
+      description: change of proportion of foreigner
+    - name: k17_non_eu_foreigners
+      description: percentage of non-EU foreigners
+    - name: k07_foreign_transfer_recipients
+      description: percentage of foreign transfer recipients
+    - name: k08_urban_apartments
+      description: percentage of urban apartments
+    - name: k14_living_rooms
+      description: average number of living rooms
+    - name: k15_living_space
+      description: average living space
+    - name: k09_simple_residential_area
+      description: percentage of simple residential area
+    - name: k10_duration_of_residence_over_5_years
+      description: percentage of duration of residence over 5 years old
+    - name: k11_migration_volume
+      description: migration volume
+    - name: k12_balance_of_migration
+      description: balance of migration
+    - name: k13_balance_of_migration_of_children_below_6
+      description: balance of migration of children below 6 years old
 description: This data product provides Berlin monitoring social urban development data on different LOR hierarchy levels
 input_ports:
   - id: berlin-lor-monitoring-social-urban-development-2021-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2021
-      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      description:
       url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/
       license:
       updated: 2020-12-31
+      schema: []
     files:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_1_gesamtindex_soziale_ungleichheit_sdi_mss_2021.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-1_index-indikatoren_anteilswerte_auf_planungsraum-ebene_mss_2021.xlsx
@@ -55,10 +86,12 @@ input_ports:
   - id: berlin-lor-monitoring-social-urban-development-2019-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2019
-      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      description:
       url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/
       license:
       updated: 2018-12-31
+      schema: []
     files:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/1-sdi_mss2019.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-1-indexind_anteile_plr_mss2019.xlsx
@@ -71,10 +104,12 @@ input_ports:
   - id: berlin-lor-monitoring-social-urban-development-2017-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2017
-      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      description:
       url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/
       license:
       updated: 2016-12-31
+      schema: []
     files:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/1-sdi_mss2017.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/2-1-indexind_anteile_plr_mss2017.xlsx
@@ -87,10 +122,12 @@ input_ports:
   - id: berlin-lor-monitoring-social-urban-development-2015-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2015
-      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      description:
       url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/
       license:
       updated: 2014-12-31
+      schema: []
     files:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/1-sdi_mss2015.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-1-indexind_anteile_plr_mss2015.xlsx
@@ -103,10 +140,12 @@ input_ports:
   - id: berlin-lor-monitoring-social-urban-development-2013-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2013
-      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      description:
       url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/
       license:
       updated: 2012-12-31
+      schema: []
     files:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/1-sdi_mss2013.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-1-indexind_anteile_plr_mss2013.xlsx
@@ -120,10 +159,12 @@ output_ports:
   - id: berlin-lor-monitoring-social-urban-development-csv
     metadata:
       name: Berlin LOR monitoring social urban development csv
-      author: Open Data Product
+      owner: Open Data Product
+      description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data
       license: CC-BY-4.0
       updated: 2023-07-27
+      schema: []
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-districts.csv
@@ -140,10 +181,15 @@ output_ports:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-districts.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.csv
-metrics:
-  - quality:
-  - operational:
+observability:
+  quality:
+  operational:
+  slas:
+  security:
+consumers:
+use_cases:
 classification: source-aligned
+ubiquitous_language:
 tags:
   - berlin
   - lor
