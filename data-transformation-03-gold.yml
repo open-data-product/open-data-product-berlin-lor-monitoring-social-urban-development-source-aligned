@@ -1,0 +1,683 @@
+---
+input_ports:
+  - id: berlin-lor-monitoring-social-urban-development-2013-00
+    files:
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: status_index
+          - { name: status_index_class, action: "remove" }
+          - name: dynamic_index
+          - { name: dynamic_index_class, action: "remove" }
+          - { name: status_dynamic_index,  action: "remove" }
+          - { name: status_dynamic_index_class, action: "remove" }
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-3-districts.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: z_s1_percentage_unemployed
+          - name: z_s2_percentage_long_term_unemployed
+          - name: z_s3_percentage_transfer_payments_recipients
+          - name: z_s4_percentage_transfer_payments_recipients_below_15_years
+          - name: z_d1_percentage_unemployed
+          - name: z_d2_percentage_long_term_unemployed
+          - name: z_d3_percentage_transfer_payments_recipients
+          - name: z_d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+  - id: berlin-lor-monitoring-social-urban-development-2015-00
+    files:
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: status_index
+          - { name: status_index_class, action: "remove" }
+          - name: dynamic_index
+          - { name: dynamic_index_class, action: "remove" }
+          - { name: status_dynamic_index,  action: "remove" }
+          - { name: status_dynamic_index_class, action: "remove" }
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-3-districts.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: z_s1_percentage_unemployed
+          - name: z_s2_percentage_long_term_unemployed
+          - name: z_s3_percentage_transfer_payments_recipients
+          - name: z_s4_percentage_transfer_payments_recipients_below_15_years
+          - name: z_d1_percentage_unemployed
+          - name: z_d2_percentage_long_term_unemployed
+          - name: z_d3_percentage_transfer_payments_recipients
+          - name: z_d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+  - id: berlin-lor-monitoring-social-urban-development-2017-00
+    files:
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: status_index
+          - { name: status_index_class, action: "remove" }
+          - name: dynamic_index
+          - { name: dynamic_index_class, action: "remove" }
+          - { name: status_dynamic_index,  action: "remove" }
+          - { name: status_dynamic_index_class, action: "remove" }
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-3-districts.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: z_s1_percentage_unemployed
+          - name: z_s2_percentage_long_term_unemployed
+          - name: z_s3_percentage_transfer_payments_recipients
+          - name: z_s4_percentage_transfer_payments_recipients_below_15_years
+          - name: z_d1_percentage_unemployed
+          - name: z_d2_percentage_long_term_unemployed
+          - name: z_d3_percentage_transfer_payments_recipients
+          - name: z_d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+  - id: berlin-lor-monitoring-social-urban-development-2019-00
+    files:
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: status_index
+          - { name: status_index_class, action: "remove" }
+          - name: dynamic_index
+          - { name: dynamic_index_class, action: "remove" }
+          - { name: status_dynamic_index,  action: "remove" }
+          - { name: status_dynamic_index_class, action: "remove" }
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-3-districts.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: z_s1_percentage_unemployed
+          - name: z_s2_percentage_long_term_unemployed
+          - name: z_s3_percentage_transfer_payments_recipients
+          - name: z_s4_percentage_transfer_payments_recipients_below_15_years
+          - name: z_d1_percentage_unemployed
+          - name: z_d2_percentage_long_term_unemployed
+          - name: z_d3_percentage_transfer_payments_recipients
+          - name: z_d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+
+  - id: berlin-lor-monitoring-social-urban-development-2021-00
+    files:
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: status_index
+          - { name: status_index_class, action: "remove" }
+          - name: dynamic_index
+          - { name: dynamic_index_class, action: "remove" }
+          - { name: status_dynamic_index,  action: "remove" }
+          - { name: status_dynamic_index_class, action: "remove" }
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - name: s1_percentage_unemployed
+          - name: s2_percentage_long_term_unemployed
+          - name: s3_percentage_transfer_payments_recipients
+          - name: s4_percentage_transfer_payments_recipients_below_15_years
+          - name: d1_percentage_unemployed
+          - name: d2_percentage_long_term_unemployed
+          - name: d3_percentage_transfer_payments_recipients
+          - name: d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-3-districts.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: z_s1_percentage_unemployed
+          - name: z_s2_percentage_long_term_unemployed
+          - name: z_s3_percentage_transfer_payments_recipients
+          - name: z_s4_percentage_transfer_payments_recipients_below_15_years
+          - name: z_d1_percentage_unemployed
+          - name: z_d2_percentage_long_term_unemployed
+          - name: z_d3_percentage_transfer_payments_recipients
+          - name: z_d4_percentage_transfer_payments_recipients_below_15_years
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-3.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k01_youth_unemployment
+          - name: k02_single_parent_households
+          - name: k03_old_age_poverty
+          - name: k04_children_with_migration_background
+          - name: k05_inhabitants_with_migration_background
+          - name: k06_change_proportion_of_foreigner
+          - name: k07_foreign_transfer_recipients
+          - name: k08_urban_apartments
+          - name: k09_simple_residential_area
+          - name: k10_duration_of_residence_over_5_years
+          - name: k11_migration_volume
+          - name: k12_balance_of_migration
+          - name: k13_balance_of_migration_of_children_below_6
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-1-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-1-1-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k08_urban_apartments
+          - name: k14_living_space
+          - name: k15_living_ares
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2-1-district-regions.csv
+        names:
+          - name: id
+          - { name: district_region_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k08_urban_apartments
+          - name: k14_living_space
+          - name: k15_living_ares
+      - source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2-1.csv
+        target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2-1-districts.csv
+        names:
+          - name: id
+          - { name: district_name, action: "remove" }
+          - name: inhabitants
+          - { name: average_and_standard_deviation, action: "remove" }
+          - name: k08_urban_apartments
+          - name: k14_living_space
+          - name: k15_living_ares
