@@ -11,6 +11,27 @@
 
 ## Input Ports
 
+### Bericht Monitoring Soziale Stadtentwicklung Berlin 2023
+
+* owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+* url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/
+* updated: 2020-12-31
+
+**Files**
+
+* [1sdi_mss2023.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/1sdi_mss2023.xlsx)
+* [21indexind_anteile_plr_mss2023.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/21indexind_anteile_plr_mss2023.xlsx)
+* [22indexind_anteile_bzr_mss2023_kor.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/22indexind_anteile_bzr_mss2023_kor.xlsx)
+* [22indexind_anteile_bzr_mss2023_kor.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/22indexind_anteile_bzr_mss2023_kor.xlsx)
+* [23indexind_anteile_bezirke_mss2023_kor.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/23indexind_anteile_bezirke_mss2023_kor.xlsx)
+* [3indexind_z_wertemss2023.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/3indexind_z_wertemss2023.xlsx)
+* [41kontextind_anteile_plr_mss2023-1.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/41kontextind_anteile_plr_mss2023-1.xlsx)
+* [42kontextind_anteile_bzr_mss2023-1.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/42kontextind_anteile_bzr_mss2023-1.xlsx)
+* [43kontextind_anteile_bezirke_mss2023-2.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/43kontextind_anteile_bezirke_mss2023-2.xlsx)
+* [411kontextind_anteile_plr_mss2023-2.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/411kontextind_anteile_plr_mss2023-2.xlsx)
+* [421kontextind_anteile_bzr_mss2023-2.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/421kontextind_anteile_bzr_mss2023-2.xlsx)
+* [431kontextind_anteile_bezirke_mss2023-2.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/431kontextind_anteile_bezirke_mss2023-2.xlsx)
+
 ### Bericht Monitoring Soziale Stadtentwicklung Berlin 2021
 
 * owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
