@@ -1,6 +1,4 @@
 id,planning_area_name,inhabitants,average_and_standard_deviation,k01_youth_unemployment,k02_single_parent_households,k03_old_age_poverty,k04_children_with_migration_background,k05_inhabitants_with_migration_background,k06_change_proportion_of_foreigner,k07_foreign_transfer_recipients,k08_urban_apartments,k09_simple_residential_area,k10_duration_of_residence_over_5_years,k11_migration_volume,k12_balance_of_migration,k13_balance_of_migration_of_children_below_6
-00Nummer,Name,,SD:,1.74936,-,5.91398,20.32973,15.28938,10.62042,3.41294,9.52051,13.50026,19.77269,0.24805,7.12912,40.47598
-00000000,,,,,,,,,,,,,,,,
 01011101,Stülerstraße,3384,,1.11111,-,8.11554,90.17857,60.6974,41.87352,3.11309,65.27876,7.06687,0.65559,2.01862,41.73611,0
 01011102,Großer Tiergarten,196,,0,-,0,0,0,0,0,0,0,0,0,0,0
 01011103,Lützowstraße,5038,,2.68714,-,19.87041,82.27474,57.26479,34.75586,-4.17129,60.3084,23.1319,8.72987,1.83585,42.58575,14.41048
@@ -446,3 +444,5 @@ id,planning_area_name,inhabitants,average_and_standard_deviation,k01_youth_unemp
 12302110,Dannenwalder Weg,10574,,3.54302,-,7.00565,76.79417,55.15415,28.50388,2.20868,76.94094,49.12587,93.54386,1.4791,29.53859,100
 12302211,Lübarser Straße,3339,,1.00334,-,2.35849,55.10753,28.45163,12.57862,2.06665,60.47619,27.68817,28.61428,1.98862,41.18988,72.35699
 12302212,Rollbergesiedlung,5964,,4.33604,-,10.89202,68.8151,47.56875,29.81221,3.48399,69.85377,62.49269,0,1.58903,31.78253,93.62844
+12304313,Borsigwalde,6735,,2.49584,-,4.9054,43.38983,23.94952,14.98144,2.95545,55.40139,28.81537,17.50765,1.94595,38.90037,91.4922
+12304314,Ziekowstraße/Freie Scholle,9738,,0.95579,-,4.09605,26.28475,14.67447,7.0343,1.20614,61.75182,22.93103,13.50703,2.15404,41.31023,0

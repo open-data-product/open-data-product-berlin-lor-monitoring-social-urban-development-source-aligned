@@ -3,13 +3,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned">
-    <img src="logo-with-text.png" alt="Logo" height="80">
+    <img src="logo-with-text.png" alt="Logo" style="height: 80px; ">
   </a>
 
   <h1 align="center">Berlin LOR Monitoring Social Urban Development</h1>
 
   <p align="center">
-    Data product providing Berlin LOR monitoring social urban development data</a>
+    Data product providing Berlin LOR monitoring social urban development data
   </p>
 </p>
 
