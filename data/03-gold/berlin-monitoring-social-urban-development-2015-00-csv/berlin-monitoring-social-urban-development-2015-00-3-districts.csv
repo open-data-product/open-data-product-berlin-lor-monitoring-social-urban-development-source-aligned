@@ -1,4 +1,5 @@
 id,inhabitants,z_s1_percentage_unemployed,z_s2_percentage_long_term_unemployed,z_s3_percentage_transfer_payments_recipients,z_s4_percentage_transfer_payments_recipients_below_15_years,z_d1_percentage_unemployed,z_d2_percentage_long_term_unemployed,z_d3_percentage_transfer_payments_recipients,z_d4_percentage_transfer_payments_recipients_below_15_years
+00000000,,,,,,,,,
 01011101,3114,-0.48935,-0.87003,-0.45628,-0.35272,-2.16838,-0.56124,mittel,0.0743
 01011102,194,0,0,0,0,0,0,0,0
 01011103,5130,0.12323,-0.26521,0.7099,0.65491,1.22283,0.3165,mittel,-0.79697
@@ -445,4 +446,3 @@ id,inhabitants,z_s1_percentage_unemployed,z_s2_percentage_long_term_unemployed,z
 12302211,3280,-0.2262,-0.06095,-0.58878,-0.68356,-1.5594899999999998,-0.40364,mittel,0.07309
 12302212,5472,1.30133,0.85371,2.13242,1.78629,6.07375,1.57205,sehr niedrig,0.23278
 12304313,6452,0.0141,-0.00247,-0.09563,0.04037,-0.04363,-0.01129,mittel,-0.47544
-12304314,9679,-0.48713,-0.66954,-0.54061,-0.50494,-2.20222,-0.56999,mittel,-0.36419

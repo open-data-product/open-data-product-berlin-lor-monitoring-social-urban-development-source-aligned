@@ -1,12 +1,12 @@
 ---
-id: berlin-lor-monitoring-social-urban-development-source-aligned
+id: berlin-monitoring-social-urban-development-source-aligned
 metadata:
-  name: Berlin LOR Monitoring Social Urban Development (source-aligned)
+  name: Berlin Monitoring Social Urban Development (source-aligned)
   owner: Open Data product
-  description: Source-aligned data product providing Berlin LOR monitoring social urban development data
-  url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned
+  description: Source-aligned data product providing Berlin monitoring social urban development data
+  url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned
   license: CC-BY 4.0
-  updated: 2025-10-28
+  updated: 2025-11-09
   schema:
     - name: inhabitants
       description: number of inhabitants
@@ -61,7 +61,7 @@ metadata:
     - name: k13_balance_of_migration_of_children_below_6
       description: balance of migration of children below 6 years old
 input_ports:
-  - id: berlin-lor-monitoring-social-urban-development-2013-00
+  - id: berlin-monitoring-social-urban-development-2013-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2013
       owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
@@ -79,7 +79,7 @@ input_ports:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-1-kontextind_anteile_plr_mss2013.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-2-kontextind_anteile_bzr_mss2013.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-3-kontextind_anteile_bezirke_mss2013.xlsx
-  - id: berlin-lor-monitoring-social-urban-development-2015-00
+  - id: berlin-monitoring-social-urban-development-2015-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2015
       owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
@@ -97,7 +97,7 @@ input_ports:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-1-kontextind_anteile_plr_mss2015.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-2-kontextind_anteile_bzr_mss2015.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-3-kontextind_anteile_bezirke_mss2015.xlsx
-  - id: berlin-lor-monitoring-social-urban-development-2017-00
+  - id: berlin-monitoring-social-urban-development-2017-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2017
       owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
@@ -115,7 +115,7 @@ input_ports:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-1-kontextind_anteile_plr_mss2017.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-2-kontextind_anteile_bzr_mss2017.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-3-kontextind_anteile_bezirke_mss2017.xlsx
-  - id: berlin-lor-monitoring-social-urban-development-2019-00
+  - id: berlin-monitoring-social-urban-development-2019-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2019
       owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
@@ -133,7 +133,7 @@ input_ports:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.1.kontextind_anteile_plr_mss2019.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.2.kontextind_anteile_bzr_mss2019.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.3.kontextind_anteile_bezirke_mss2019.xlsx
-  - id: berlin-lor-monitoring-social-urban-development-2021-00
+  - id: berlin-monitoring-social-urban-development-2021-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2021
       owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
@@ -154,7 +154,7 @@ input_ports:
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-1-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-2-1_kontext-indikatoren_anteile_bzr_mss_2021.xlsx
       - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-3-1_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx
-  - id: berlin-lor-monitoring-social-urban-development-2023-00
+  - id: berlin-monitoring-social-urban-development-2023-00
     metadata:
       name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2023
       owner: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
@@ -190,192 +190,192 @@ transformation_steps:
     path: https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_aggregator.py
     description: aggregates data to be used as output ports
 output_ports:
-  - id: berlin-lor-monitoring-social-urban-development-2013-00-csv
+  - id: berlin-monitoring-social-urban-development-2013-00-csv
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2013 00 Csv
+      name: Berlin Monitoring Social Urban Development 2013 00 Csv
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-2-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-2-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-2-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-4-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-4-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-csv/berlin-lor-monitoring-social-urban-development-2013-00-4-3-districts.csv
-  - id: berlin-lor-monitoring-social-urban-development-2013-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-csv/berlin-monitoring-social-urban-development-2013-00-4-3-districts.csv
+  - id: berlin-monitoring-social-urban-development-2013-00-parquet
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2013 00 Parquet
+      name: Berlin Monitoring Social Urban Development 2013 00 Parquet
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-2-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-2-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-2-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-4-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-4-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00-parquet/berlin-lor-monitoring-social-urban-development-2013-00-4-3-districts.parquet
-  - id: berlin-lor-monitoring-social-urban-development-2015-00-csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-2-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-2-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-2-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-4-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-4-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2013-00-parquet/berlin-monitoring-social-urban-development-2013-00-4-3-districts.parquet
+  - id: berlin-monitoring-social-urban-development-2015-00-csv
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2015 00 Csv
+      name: Berlin Monitoring Social Urban Development 2015 00 Csv
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-2-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-2-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-2-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-4-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-4-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-csv/berlin-lor-monitoring-social-urban-development-2015-00-4-3-districts.csv
-  - id: berlin-lor-monitoring-social-urban-development-2015-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-csv/berlin-monitoring-social-urban-development-2015-00-4-3-districts.csv
+  - id: berlin-monitoring-social-urban-development-2015-00-parquet
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2015 00 Parquet
+      name: Berlin Monitoring Social Urban Development 2015 00 Parquet
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-2-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-2-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-2-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-4-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-4-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00-parquet/berlin-lor-monitoring-social-urban-development-2015-00-4-3-districts.parquet
-  - id: berlin-lor-monitoring-social-urban-development-2017-00-csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-2-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-2-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-2-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-4-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-4-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2015-00-parquet/berlin-monitoring-social-urban-development-2015-00-4-3-districts.parquet
+  - id: berlin-monitoring-social-urban-development-2017-00-csv
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2017 00 Csv
+      name: Berlin Monitoring Social Urban Development 2017 00 Csv
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-2-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-2-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-2-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-4-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-4-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-csv/berlin-lor-monitoring-social-urban-development-2017-00-4-3-districts.csv
-  - id: berlin-lor-monitoring-social-urban-development-2017-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-csv/berlin-monitoring-social-urban-development-2017-00-4-3-districts.csv
+  - id: berlin-monitoring-social-urban-development-2017-00-parquet
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2017 00 Parquet
+      name: Berlin Monitoring Social Urban Development 2017 00 Parquet
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-2-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-2-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-2-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-4-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-4-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00-parquet/berlin-lor-monitoring-social-urban-development-2017-00-4-3-districts.parquet
-  - id: berlin-lor-monitoring-social-urban-development-2019-00-csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-2-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-2-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-2-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-4-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-4-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2017-00-parquet/berlin-monitoring-social-urban-development-2017-00-4-3-districts.parquet
+  - id: berlin-monitoring-social-urban-development-2019-00-csv
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2019 00 Csv
+      name: Berlin Monitoring Social Urban Development 2019 00 Csv
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-2-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-2-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-2-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-4-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-4-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-csv/berlin-lor-monitoring-social-urban-development-2019-00-4-3-districts.csv
-  - id: berlin-lor-monitoring-social-urban-development-2019-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-csv/berlin-monitoring-social-urban-development-2019-00-4-3-districts.csv
+  - id: berlin-monitoring-social-urban-development-2019-00-parquet
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2019 00 Parquet
+      name: Berlin Monitoring Social Urban Development 2019 00 Parquet
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-2-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-2-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-2-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-4-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-4-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00-parquet/berlin-lor-monitoring-social-urban-development-2019-00-4-3-districts.parquet
-  - id: berlin-lor-monitoring-social-urban-development-2021-00-csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-2-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-2-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-2-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-4-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-4-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2019-00-parquet/berlin-monitoring-social-urban-development-2019-00-4-3-districts.parquet
+  - id: berlin-monitoring-social-urban-development-2021-00-csv
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2021 00 Csv
+      name: Berlin Monitoring Social Urban Development 2021 00 Csv
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-2-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-2-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-2-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-3-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-4-1-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-4-1-planning-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-4-2-1-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-4-3-1-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-csv/berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.csv
-  - id: berlin-lor-monitoring-social-urban-development-2021-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-4-1-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-4-2-1-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-4-3-1-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-csv/berlin-monitoring-social-urban-development-2021-00-4-3-districts.csv
+  - id: berlin-monitoring-social-urban-development-2021-00-parquet
     metadata:
-      name: Berlin Lor Monitoring Social Urban Development 2021 00 Parquet
+      name: Berlin Monitoring Social Urban Development 2021 00 Parquet
       owner: Open Data product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet
       license: CC-BY 4.0
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-2-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-2-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-2-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-3-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-4-1-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-4-1-planning-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-4-2-1-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-4-3-1-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00-parquet/berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-2-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-2-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-2-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-3-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-4-1-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-4-1-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-4-2-1-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-4-2-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-4-3-1-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-monitoring-social-urban-development-2021-00-parquet/berlin-monitoring-social-urban-development-2021-00-4-3-districts.parquet
 observability:
   quality:
   operational:

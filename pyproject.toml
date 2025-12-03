@@ -1,7 +1,7 @@
 [project]
-name = "open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned"
+name = "open-data-product-berlin-monitoring-social-urban-development-source-aligned"
 version = "0.1.0"
-description = "Source-aligned data product providing Berlin LOR monitoring social urban development data"
+description = "Source-aligned data product providing Berlin monitoring social urban development data"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
